@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="test-chat">
+
+<head>
+    <title>test-chat</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="libs/angular-material/angular-material.css">
+    <link rel="stylesheet" href="../public/libs/MaterialDesign/css/materialdesignicons.css">
+    <script src="libs/angular/angular.js"></script>
+    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost:2016/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="libs/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="libs/angular-aria/angular-aria.js"></script>
+    <script type="text/javascript" src="libs/angular-material/angular-material.js"></script>
+    <script type="text/javascript" src="libs/angular-socket-io/socket.js"></script>
+    <script type="text/javascript" src="libs/angular-material-icons/angular-material-icons.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+
+<body ng-controller="MainCtrl">
+    <md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Settings">
+                </md-button>
+                <h2>
+					<span>Test Chat</span>
+				</h2>
+                <span flex></span>
+				<ul>
+					<li><a href="/list" class="with-arrow">Message List</a></li>
+					<li><a href="/" >Add Message</a></li>
+				</ul>
+				
+                
+            </div>
+        </md-toolbar>
+		<div class="m_container">
+			<section>
+				<md-list>
+					<md-whiteframe ng-repeat="m in messages" class="md-whiteframe-z2 message" layout layout-align="center center">
+						<md-list-item class="md-3-line">
+							<div class="md-list-item-text">
+								<p>{{m.content}}</p>
+							</div>
+						</md-list-item>
+					</md-whiteframe>
+
+				</md-list>
+			</section>
+		</div>
+		<div class="list_footer">
+		<article>
+			<div>				
+				<p><!--Copyright-->2016 © Have a nice day.</p>
+			</div>
+		</article>
+		</div>
+    </md-content>
+</body>
+
+</html>

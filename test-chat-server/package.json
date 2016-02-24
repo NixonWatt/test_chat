@@ -1,0 +1,16 @@
+{
+    "name": "test-chat",
+    "main": "index.js",
+    "dependencies": {
+		"express": "latest",
+        "mongoose": "latest",
+        "morgan": "latest",
+        "socket.io": "latest"
+    },
+    "engines": {
+    "node": "0.12.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

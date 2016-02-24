@@ -1,0 +1,17 @@
+{
+    "name": "test-chat",
+    "main": "server.js",
+    "dependencies": {
+		"express": "latest",
+        "socket.io": "latest",
+		"body-parser": "latest",
+		"ejs": "latest",
+		"cookie-parser": "latest"
+    },
+    "engines": {
+    "node": "0.12.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
